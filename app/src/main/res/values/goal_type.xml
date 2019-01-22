@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="goaltype">
+        <item> 请选择项目类型</item>
+        <item> 学习 </item>
+        <item> 运动 </item>
+        <item> 生活 </item>
+        <item> 习惯 </item>
+        <item> 娱乐 </item>
+    </string-array>
+</resources>
