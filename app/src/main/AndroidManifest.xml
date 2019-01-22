@@ -18,11 +18,12 @@
         </activity>
         <activity android:name=".SetGoalActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".EditGoalActivity" />
+        <activity android:name=".CheckInActivity" />
 
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/corner" />
+
     </application>
 
 </manifest>

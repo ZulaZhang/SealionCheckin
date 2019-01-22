@@ -5,11 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button setGoal, calendar, profile,editGoal;
+    private Button setGoal, calendar, profile,goal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setGoal = (Button) findViewById(R.id.set_goal);
         calendar = (Button) findViewById(R.id.calendar);
         profile = (Button) findViewById(R.id.profile);
-        editGoal = (Button) findViewById(R.id.edit_goal);
+        goal = (Button) findViewById(R.id.goal);
         setGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        editGoal.setOnClickListener(new View.OnClickListener() {
+        goal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,EditGoalActivity.class);
+                Intent intent= new Intent(MainActivity.this,CheckInActivity.class);
                 startActivity(intent);
             }
         });
